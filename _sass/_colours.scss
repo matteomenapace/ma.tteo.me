@@ -19,7 +19,6 @@ h1, h2, h3, h4, h5,
 a 
 {
 	transition: all .3s;
-	color:$charcoal;
 	color: $turquoise;
   text-decoration: none;
   // border-bottom: 1px dotted;
@@ -29,7 +28,7 @@ a
 	&:focus
 	{
 		transition: all .3s;
-		color: $almost-black;
+		color:$charcoal;
 		// border-bottom: 1px solid;
 	}
 }
