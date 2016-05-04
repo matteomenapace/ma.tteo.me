@@ -16,6 +16,24 @@ body
 	{
 		font-size: 13.3333333333333px; // p → 20px
 	}
+
+	/* h1
+	{
+		&:after 
+		{
+		  width: $row * 3;
+		  height: $row * 3;
+		  top: -$row * 4;
+		}
+
+		&:hover
+		{
+			&:after
+			{
+				top: -$row * 1;
+			}
+		}
+	} */
 }	
 
 /* @media (max-width: 719px) 
@@ -36,6 +54,22 @@ body
 		// font-size: 3.9375rem;
 		font-size: 55px;
 		line-height: $row * 2;
+
+		&:after 
+		{
+		  width: $row * 3;
+		  height: $row * 3;
+		  top: -$row * 4;
+		}
+
+		&:hover
+		{
+			&:after
+			{
+				top: -$row * 1;
+			}
+		}
+
 	}
 
 	h2 {

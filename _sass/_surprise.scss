@@ -1,0 +1,33 @@
+h1
+{
+	position: relative;
+
+	&:after 
+	{
+	  background: url("../assets/surprise.png") no-repeat;
+	  background-size: contain;
+
+	  content: " ";
+	  width: $row * 4;
+	  height: $row * 4;
+	  border-bottom-left-radius: 53%;
+	  // display: block;
+	  position: absolute;
+	  right: 0;
+	  top: -$row * 5;
+	  transition: .2s ease-out;
+	}
+
+	&:hover
+	{
+		&:after
+		{
+			top: -$row * 1;
+		}
+	}
+}
+
+// #surprise:target
+// {
+// 	left: 0;
+// }
