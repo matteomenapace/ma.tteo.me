@@ -13,7 +13,6 @@ body
 }
 
 h1, h2, h3, h4, h5, h6,
-a, b 
 {
 	font-family: $headings-font;
 	font-weight: 900;
@@ -22,8 +21,7 @@ a, b
 
 a, b 
 {
-	position: relative;
-  top: 1px;
+	font-weight: 700;
 }
 
 i, em,
@@ -47,4 +45,14 @@ h4
 .centred
 {
 	text-align: center;
+}
+
+kbd, code 
+{
+  font-family: 'Source Code Pro', monospace;
+  // font-size: 83%;
+  font-weight: 300;
+  display: inline-block;
+  padding: .2rem .5rem .4rem;
+  border-radius: .3rem;
 }

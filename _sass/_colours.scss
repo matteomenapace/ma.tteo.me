@@ -33,3 +33,12 @@ a
 		// border-bottom: 1px solid;
 	}
 }
+
+kbd, code 
+{
+  color: rgb(85, 85, 85);
+  background-color: rgb(252, 252, 252);
+  border: solid 1px rgb(204, 204, 204);
+	border-bottom-color: rgb(187, 187, 187);
+	box-shadow: inset 0 -1px 0 rgb(187, 187, 187);
+}
