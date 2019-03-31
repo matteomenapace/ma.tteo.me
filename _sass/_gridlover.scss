@@ -1,14 +1,13 @@
 // from http://www.gridlover.net/try, 24px base with golden ratio 1.618
 
 .gridlover-grid {
-	background-image: linear-gradient(to bottom, $almost-white 1px, transparent 1px);
 	// background-image: linear-gradient(to bottom, red 1px, transparent 1px);
 	background-size: $row $row;
 }
 
 body {
 	font-style: normal;
-	font-size: 1.5rem;
+	font-size: 1.36rem;
 	line-height: 2.25rem;
 	margin: 0 auto;
 }

@@ -2,7 +2,7 @@ h1
 {
 	position: relative;
 
-	&:after 
+	&:after
 	{
 	  background: url("../assets/surprise.png") no-repeat;
 	  background-size: contain;
@@ -16,6 +16,9 @@ h1
 	  right: 0;
 	  top: -$row * 5;
 	  transition: .2s ease-out;
+
+		position: fixed;
+		right: $row/2;
 	}
 
 	&:hover
@@ -23,6 +26,7 @@ h1
 		&:after
 		{
 			top: -$row * 1;
+			top: 0;
 		}
 	}
 }

@@ -1,34 +1,41 @@
 // VARIABLES
 
-	// units
+// units
 
-		$row: 2.25rem;
+$row: 2.25rem;
 
-	// colours
+// colours
 
-		$black: #000;
-		$almost-black: #1a1a1a;
-		$charcoal: #2A3333;
-		$clouds: #4d4d4d;
-		$almost-white: rgb(243,248,248); // #eee;
-		$white: #fff;
+$black: #000;
+$almost-black: #1a1a1a;
+$charcoal: #2A3333;
+$clouds: #4d4d4d;
+$almost-white: rgb(243,248,248); // #eee;
+$white: #fff;
 
-		// from baddeo.com v1
-		$b-green: 			#7fbf42;
-		$dark-green: 		#00733f;
-		$blue: 				#0095D7;
-		$twitter-blue: 		#55acee;
-		$dark-blue: 		#00334c;
-		$pale-yellow: 		#fdeeca;
-		$purple: 			#52283b;
-		$orange: 			#ff8036;
-		$ochre: 			#a55c43;
+// from Beesness
+$charcoal: #1c142d;
+$clouds: #362c4b;
+$yellow: #fffd23;
+$orange: #ffde00;
+$pale-sky: rgba(22, 22, 83, 0.22);
 
-		// from themanual.org
-		$m-orange:			#ed9c31;
-		$m-blue:			#51b9e0;
-		$m-red:				#ed3d45;
-		
-		// new colours
-		$green: 			#27D42C;
-		$turquoise: 	rgb(0, 223, 183);
+// from baddeo.com v1
+// $b-green: #7fbf42;
+// $dark-green: #00733f;
+// $blue: #0095D7;
+// $twitter-blue: #55acee;
+// $dark-blue: #00334c;
+// $pale-yellow: #fdeeca;
+// $purple: #52283b;
+// $orange: #ff8036;
+// $ochre: #a55c43;
+
+// from themanual.org
+// $m-orange:#ed9c31;
+// $m-blue: #51b9e0;
+// $m-red: #ed3d45;
+
+// new colours
+// $green: #27D42C;
+// $turquoise: rgb(0, 223, 183);

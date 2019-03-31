@@ -2,8 +2,11 @@
 
 /* FONTS */
 
-$body-font: 'Lekton', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, serif;
-$headings-font: 'Roboto', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-font: 'IBM Plex Sans', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, serif;
+
+$headings-font: 'Fredoka One', 'Roboto', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$monospace-font: 'IBM Plex Mono', 'Source Code Pro', monospace;
 
 body
 {
@@ -15,22 +18,30 @@ body
 h1, h2, h3, h4, h5, h6,
 {
 	font-family: $headings-font;
-	font-weight: 900;
+	// font-family: "IBM Plex Mono";
+	// font-family: "Fredoka One";
+	// font-weight: 900;
+	font-weight: 400;
 	font-style: inherit;
+
+	a, b
+	{
+		font-weight: 400;
+	}
 }
 
-a, b 
+a, b
 {
 	font-weight: 700;
 }
 
 i, em,
-blockquote 
+blockquote
 {
 	font-style: italic;
 }
 
-h4 
+h4
 {
 	margin-bottom: $row *1;
 }
@@ -47,12 +58,19 @@ h4
 	text-align: center;
 }
 
-kbd, code 
+kbd, code, p a, span
 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: $monospace-font;
   // font-size: 83%;
-  font-weight: 300;
-  display: inline-block;
-  padding: .2rem .5rem .4rem;
-  border-radius: .3rem;
+  font-weight: 500;
+	// line-height: 1;
+	// font-size: 1em;
+  // display: inline-block;
+  // border-radius: .3rem;
+	// padding: .2rem .5rem .4rem;
+	// padding: 0rem .5rem .3rem;
+  // top: 0.1rem;
+	padding: 0.15rem .5rem .2rem;
+  top: 0rem;
+  position: relative;
 }
