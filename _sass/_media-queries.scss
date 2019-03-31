@@ -16,39 +16,14 @@ body
 	{
 		font-size: 13.3333333333333px; // p → 20px
 	}
-
-	/* h1
-	{
-		&:after
-		{
-		  width: $row * 3;
-		  height: $row * 3;
-		  top: -$row * 4;
-		}
-
-		&:hover
-		{
-			&:after
-			{
-				top: -$row * 1;
-			}
-		}
-	} */
 }
-
-/* @media (max-width: 719px)
-{
-	html {
-		font-size: 12px; // p → 18px
-	}
-} */
 
 @media (max-width: 599px)
 {
-
-	/* html {
-		font-size: 16px; // p → 24px
-	} */
+	.media-frame
+	{
+		height: $row*12;
+	}
 
 	h1 {
 		// font-size: 3.9375rem;
@@ -61,15 +36,6 @@ body
 		  height: $row * 3;
 		  top: -$row * 4;
 		}
-
-		&:hover
-		{
-			&:after
-			{
-				// top: -$row * 1;
-			}
-		}
-
 	}
 
 	h2 {
