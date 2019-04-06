@@ -32,9 +32,9 @@
 
 		&:after
 		{
-		  width: $row * 3;
-		  height: $row * 3;
-		  top: -$row * 4;
+			width: $row * 3;
+			height: $row * 3;
+			top: -$row * 4;
 		}
 	}
 
@@ -49,6 +49,14 @@
 		// similar to h4
 		font-size: 1.5rem;
 		line-height: 1.125rem;
-    margin: 1.125rem 0;
+		margin: 1.125rem 0;
+	}
+}
+
+@media (max-width: 399px)
+{
+	.hidden-xs
+	{
+		display: none;
 	}
 }
