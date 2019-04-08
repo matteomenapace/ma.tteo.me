@@ -21,7 +21,8 @@ module.exports = function(grunt) {
 		watch: {
 			scripts: {
 				files: [
-					'index.html'
+					'index.html',
+					'./ideas/*'
 				],
 				options: {
 					livereload: true
@@ -55,7 +56,7 @@ module.exports = function(grunt) {
 					},
 					browser: 'google chrome',
 					notify: false
-				}	
+				}
 			}
 		}
 	})
@@ -64,6 +65,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect')
 	grunt.loadNpmTasks('grunt-contrib-watch')
 	grunt.loadNpmTasks('grunt-browser-sync');
-	
+
 	grunt.registerTask('default', ['browserSync', 'watch'])
 }

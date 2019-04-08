@@ -9,22 +9,39 @@
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Matteo makes games</title>
+    <title>Game ideas by Matteo</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
     <meta name="description" content="Matteo makes #games and teaches people how to start making games" />
     <meta property="og:description" content="Matteo makes #games and teaches people how to start making games" />
     <meta property="og:title" content="Matteo Menapace" />
     <meta property="twitter:title" content="Matteo makes #games and teaches people how to start making games" />
 
-    <!-- <link href='https://fonts.googleapis.com/css?family=Lekton:400,400italic,700' rel='stylesheet' type='text/css'> -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:900,900italic' rel='stylesheet' type='text/css'> -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:300' rel='stylesheet' type='text/css'> -->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500|IBM+Plex+Sans:300,300i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="css/sassy.css">
+    <link rel="stylesheet" href="../css/sassy.css">
+
+    <script src="../lib/remarkable.min.js"></script>
+    <script src="../lib/jquery.min.js"></script>
   </head>
 
-  <body class="gridlover-grid">
+  <body class="gridlover grid">
+
+    <section class="orange margin-top-none">
+      <div class="container">
+        <h2 class="margin-top-none">Game ideas</h2>
+        <p>They strike in the most unexpected places. For me it’s often the 🚽</p>
+        <p>I jot down every 💡 and push them all to the 🌥 because some may be half-decent or inspire new ones in the future.</p>
+        <p class="margin-bottom-none">I'm <a href="//ma.tteo.me" target="_blank">Matteo</a> btw.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <ul id="ideas">
+        <li class="loading">Loading...</li>
+      </ul>
+    </section>
+
+<!--
 
     <div class="container">
       <h1>Hi! I'm <a href="#surprise">Matteo</a></h1>
@@ -34,10 +51,9 @@
 
     <section class="orange">
       <div class="container">
-        <h3 class="margin-top-none">Want me to run a workshop<abbr class="hidden-xs"> for you</abbr>?</h3>
+        <h3 style="margin-top:0">Want me to run a workshop<abbr class="hidden-xs"> for you</abbr>?</h3>
         <p>I design and facilitate <b>game-making workshops</b> for schools, museums and team-building away days. Get in touch <a href="mailto:m@tteo.me?subject=Game%20making%20workshop&body=Hi%20Matteo%2C%20my%20name%20is">m@tteo.me</a></p>
         <div class="media-frame" id="beesness"></div>
-        <!-- <iframe src="https://www.youtube.com/embed/5LGOt0zfICM?start=16" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </div>
     </section>
 
@@ -54,6 +70,11 @@
       <h3>Want to learn more?</h3>
       <p>Go to <a href="https://medium.com/@baddeo" target="_blank">medium.com/@baddeo</a> where I post thoughts and work-in-progress.</p>
     </div>
+
+-->
+    <script src="01-data.js"></script>
+    <script src="02-interface.js"></script>
+    <script src="03-logic.js"></script>
 
   </body>
 </html>

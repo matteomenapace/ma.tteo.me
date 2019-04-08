@@ -8,7 +8,7 @@ html {
 	box-sizing: inherit;
 }
 
-* { 
+* {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	outline: medium none;
@@ -34,13 +34,23 @@ img {
 table {
 	width: 100%;
 
-	td 
+	td
 	{
 		padding-right: 1rem;
 
-		&:last-child 
+		&:last-child
 		{
 			padding-right: 0;
 		}
 	}
+}
+
+.margin-top-none
+{
+	margin-top: 0 !important;
+}
+
+.margin-bottom-none
+{
+	margin-bottom: 0 !important;
 }
