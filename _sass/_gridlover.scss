@@ -55,6 +55,8 @@ p, ul, ol, pre, table, blockquote {
 ul ul, ol ol, ul ol, ol ul {
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-left: 1.5rem;
+  list-style-type: disc;
 }
 
 b, strong, em, small, code {
