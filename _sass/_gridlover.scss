@@ -47,9 +47,14 @@ h4 {
 	margin-bottom: 0rem;
 }*/
 
-p, ul, ol, pre, table, blockquote {
+p, ul, ol, pre, table, blockquote, figure {
 	margin-top: 0rem;
 	margin-bottom: 2.25rem;
+}
+
+figure {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 ul ul, ol ol, ul ol, ol ul {

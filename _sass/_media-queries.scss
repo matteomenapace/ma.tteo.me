@@ -4,7 +4,7 @@
 	margin: 0 auto;
 	padding: 0 $row/2;
 
-	p
+	p, figure
 	{
 		margin-bottom: $row;
 	}
@@ -20,11 +20,6 @@
 
 @media (max-width: 599px)
 {
-	.media-frame
-	{
-		height: $row*12;
-	}
-
 	h1 {
 		// font-size: 3.9375rem;
 		font-size: 55px;
@@ -50,6 +45,27 @@
 		font-size: 1.5rem;
 		line-height: $row/2;
 		margin: $row/2 0;
+	}
+
+	.media-frame.fixed
+	{
+		background-attachment: scroll;
+		background-size: cover !important;
+	}
+
+	#beesness
+	{
+		height: $row*12;
+	}
+
+	#nonna-giacomino
+	{
+		height: $row*23;
+	}
+
+	#nonna-memory
+	{
+		// height: $row*12;
 	}
 }
 
