@@ -14,7 +14,10 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'css/sassy.css': '_sass/sassy.scss'
+					'css/sassy.css': '_sass/sassy.scss',
+					'css/home.css': '_sass/home.scss',
+					'css/ideas.css': '_sass/ideas.scss',
+					'css/fadingmemories.css': '_sass/fadingmemories.scss'
 				}
 			}
 		},
@@ -22,7 +25,8 @@ module.exports = function(grunt) {
 			scripts: {
 				files: [
 					'index.html',
-					'./ideas/*'
+					'./ideas/*',
+					'./fadingmemories/*'
 				],
 				options: {
 					livereload: true
