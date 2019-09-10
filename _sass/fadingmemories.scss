@@ -1,0 +1,125 @@
+@import 'variables';
+@import 'bariol';
+
+// TYPOGRAPHY
+
+body, p a, span
+{
+	font-family: 'bariol-regular', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  position: relative;
+	font-family: 'bariol-bold', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h3
+{
+  top: -4px;
+}
+
+// COLOURS
+
+a
+{
+  color: $pink-dark;
+}
+
+p a
+{
+  color: $charcoal;
+  background-color: $pink-dark;
+
+	&:hover,
+	&:focus
+	{
+		color: $pink-dark;
+    background-color: $charcoal;
+	}
+}
+
+kbd, code, span
+{
+  border: solid 1px $pink-dark;
+	border-bottom-color: $pink-dark;
+	box-shadow: inset 0 -1px 0 $pink-dark;
+}
+
+// MEDIA
+
+.media-frame
+{
+  height: $row*13;
+}
+
+#nonna-giacomino
+{
+  background-image: url('../assets/fadingmemories/nonna-giacomino.png');
+  height: $row*18;
+}
+
+#nonna-memory
+{
+  background-image: url('../assets/fadingmemories/nonna-memory.png');
+}
+
+#design-notes
+{
+  background-image: url('../assets/fadingmemories/design-notes.jpg');
+}
+
+#prototype
+{
+  background-image: url('../assets/fadingmemories/prototype.png');
+}
+
+#playtest-hands
+{
+  background-image: url('../assets/fadingmemories/playtest-hands.jpg');
+}
+
+#playtest-people
+{
+  background-image: url('../assets/fadingmemories/playtest-people.jpg');
+}
+
+#paintings
+{
+  background-image: url('../assets/fadingmemories/paintings.jpg');
+}
+
+#painting-timelapse
+{
+  background-image: url('../assets/fadingmemories/prototype.png');
+}
+
+#handwriting-timelapse
+{
+  background-image: url('../assets/fadingmemories/prototype.png');
+}
+
+#cards-boxed
+{
+  background-image: url('../assets/fadingmemories/cards-boxed.jpg');
+}
+
+#beta-cards
+{
+  background-image: url('../assets/fadingmemories/beta-cards.jpg');
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 599px)
+{
+  h3
+  {
+    // TODO like h2
+  }
+
+  #nonna-giacomino
+  {
+    height: $row*23;
+  }
+}
