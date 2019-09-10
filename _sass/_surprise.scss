@@ -1,10 +1,10 @@
-h1
+#me h1
 {
 	position: relative;
 
 	&:after
 	{
-	  background: url("../assets/surprise.png") no-repeat;
+	  background: url("../assets/home/surprise.png") no-repeat;
 	  background-size: contain;
 
 	  content: " ";
