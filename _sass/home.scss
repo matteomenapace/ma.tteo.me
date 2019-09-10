@@ -1,0 +1,16 @@
+@import 'variables';
+
+#beesness
+{
+  background-image: url('../assets/home/stalk-exchange-pb.jpg');
+  background-position: top center;
+  height: $row*15;
+}
+
+@media (max-width: 599px)
+{
+  #beesness
+	{
+		height: $row*12;
+	}
+}
