@@ -20,6 +20,12 @@
 
 @media (max-width: 599px)
 {
+	.boxed
+  {
+    margin: 0;
+    padding: 0;
+  }
+	
 	h1, h2
 	{
 		// margin-top: $row/2;
@@ -58,7 +64,7 @@
 		line-height: $row;
 	}
 
-	.media-frame.fixed
+	.image-frame.fixed
 	{
 		background-attachment: scroll;
 		background-size: cover !important;
