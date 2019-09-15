@@ -58,6 +58,8 @@ kbd, code, span
   border: solid 1px $pink-dark;
 	border-bottom-color: $pink-dark;
 	box-shadow: inset 0 -1px 0 $pink-dark;
+
+	padding: 0.1rem .5rem .25rem;
 }
 
 blockquote
@@ -173,7 +175,7 @@ blockquote
 	{
 		padding: 0 $row/2;
 	}
-	
+
   h3
   {
     top: 0;
