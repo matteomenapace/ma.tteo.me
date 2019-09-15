@@ -8,37 +8,35 @@
 body {
 	font-style: normal;
 	font-size: 1.36rem;
-	line-height: 2.25rem;
+	line-height: $row;
 	margin: 0 auto;
 }
 
 h1 {
 	font-size: 6.375rem;
-	line-height: 6.75rem;
-	margin-top: 2.25rem;
-	margin-bottom: 0rem;
-	margin-bottom: 2.25rem;
+	line-height: $row*3;
 }
 
 h2 {
 	font-size: 3.9375rem;
-	line-height: 4.5rem;
-	margin-top: 2.25rem;
-	margin-bottom: 2.25rem;
+	line-height: $row*2;
 }
 
 h3 {
 	font-size: 2.4375rem;
-	line-height: 4.5rem;
-	margin-top: 2.25rem;
-	margin-bottom: 0rem;
+	line-height: $row*2;
 }
 
 h4 {
 	font-size: 1.5rem;
-	line-height: 2.25rem;
-	margin-top: 2.25rem;
+	line-height: $row;
+}
+
+h1, h2, h3, h4
+{
+	margin-top: $row;
 	margin-bottom: 0rem;
+	margin-bottom: $row;
 }
 
 /*h5 {
@@ -50,7 +48,13 @@ h4 {
 
 p, ul, ol, pre, table, blockquote, figure {
 	margin-top: 0rem;
-	margin-bottom: 2.25rem;
+	margin-bottom: $row;
+}
+
+blockquote {
+	padding-left: $row/2;
+  margin: 0;
+  border-left: 6px solid;
 }
 
 figure {
@@ -67,5 +71,5 @@ ul ul, ol ol, ul ol, ol ul {
 
 b, strong, em, small, code {
 	line-height: 1;
-	font-weight: 700;
+	// font-weight: 700;
 }
