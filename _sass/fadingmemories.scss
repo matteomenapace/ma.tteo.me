@@ -144,6 +144,16 @@ kbd, code, span
   background-image: url('../assets/fadingmemories/beta-cards.jpg');
 }
 
+#tazzina
+{
+	background-image: url('../assets/fadingmemories/espresso-cutout.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: $row*2;
+	margin: $row 0;
+}
+
 // MEDIA QUERIES
 
 @media (max-width: 599px)
