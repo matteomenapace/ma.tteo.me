@@ -11,23 +11,32 @@
 	  width: $row * 4;
 	  height: $row * 4;
 	  border-bottom-left-radius: 53%;
-	  z-index: 1;
+	  z-index: -2;
 		pointer-events: none;
 	  position: absolute;
 	  right: 0;
 	  top: -$row * 5;
 	  transition: .2s ease-out;
 
-		position: fixed;
+		// position: fixed;
 		right: $row/2;
 	}
 
 	&:hover
 	{
+		// z-index: -3;
 		&:after
 		{
 			top: -$row * 1;
-			top: 0;
+			// top: 0;
+		}
+	}
+
+	@media (max-width: 599px)
+	{
+		a
+		{
+			display: block;
 		}
 	}
 }
