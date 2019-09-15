@@ -54,3 +54,9 @@ table {
 {
 	margin-bottom: 0 !important;
 }
+
+.boxed
+{
+  margin: $row 0;
+  padding: $row 0;
+}
