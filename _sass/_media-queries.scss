@@ -24,6 +24,8 @@
 		// font-size: 3.9375rem;
 		font-size: 55px;
 		line-height: $row * 2;
+		margin-top: $row/2;
+		margin-bottom: $row/2;
 
 		&:after
 		{
