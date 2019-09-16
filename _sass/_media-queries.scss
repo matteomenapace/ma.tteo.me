@@ -10,22 +10,21 @@
 	}
 }
 
+html
+{
+	font-size: 16px; // p → 22px
+}
+
 @media (max-width: 799px)
 {
 	html
 	{
-		font-size: 13.3333333333333px; // p → 20px
+		font-size: 14px; // p → 19.25px
 	}
 }
 
 @media (max-width: 599px)
 {
-	.boxed
-  {
-    margin: 0;
-    padding: 0;
-  }
-	
 	h1, h2
 	{
 		// margin-top: $row/2;
@@ -68,11 +67,20 @@
 	{
 		background-attachment: scroll;
 		background-size: cover !important;
+
+		// full-bleed
+		margin-left: -1.225rem;
+		margin-right: -1.225rem;
 	}
 }
 
 @media (max-width: 399px)
 {
+	html
+	{
+		font-size: 13px; // p → 17.875px
+	}
+
 	.hidden-xs
 	{
 		display: none;

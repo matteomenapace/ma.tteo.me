@@ -10,15 +10,21 @@ body, p a, span
 	font-family: 'bariol-regular', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
+body
+{
+	line-height: 2em;
+}
+
 h1, h2, h3, h4, h5, h6
 {
 	font-family: 'bariol-light-italic', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
+	line-height: 1.225em;
 }
 
 h3
 {
-  top: -4px;
+  // top: -4px;
 }
 
 em, i
@@ -32,6 +38,14 @@ b, strong
 {
 	font-family: 'bariol-bold', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+p a,
+kbd, code, span
+{
+	// padding: 0.1rem .5rem .25rem;
+	padding: 0rem .3rem .2rem;
+}
+
 
 // COLOURS
 
@@ -58,8 +72,6 @@ kbd, code, span
   border: solid 1px $pink-dark;
 	border-bottom-color: $pink-dark;
 	box-shadow: inset 0 -1px 0 $pink-dark;
-
-	padding: 0.1rem .5rem .25rem;
 }
 
 blockquote
@@ -178,12 +190,42 @@ blockquote
 
   h3
   {
-    top: 0;
-		font-family: 'bariol-bold-italic', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 30px;
+
+    // top: 0;
+		// font-family: 'bariol-bold-italic', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   #nonna-giacomino
   {
     height: $row*23;
   }
+}
+
+@media (max-width: 399px)
+{
+	html
+	{
+		font-size: 12px; // p → 16.5px
+	}
+
+	h1
+	{
+		font-size: 47px;
+	}
+
+	h2
+	{
+		font-size: 35px;
+	}
+
+	h3
+	{
+		font-size: 23px;
+	}
+
+	.hidden-xs
+	{
+		display: none;
+	}
 }
