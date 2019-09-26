@@ -28,7 +28,8 @@
     .date
     {
       opacity: 0.22;
-      margin-bottom: $row;
+      // margin-bottom: $row;
+      margin: $row/2 0;
     }
 
     .images
