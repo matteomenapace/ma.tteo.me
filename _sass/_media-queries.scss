@@ -21,6 +21,11 @@ html
 	{
 		font-size: 14px; // p → 19.25px
 	}
+
+	figure {
+		margin-left: -$row/2;
+		margin-right: -$row/2;
+	}
 }
 
 @media (max-width: 599px)
@@ -48,6 +53,7 @@ html
 		// font-size: 2.4375rem;
 		font-size: 40px;
 		line-height: $row * 2;
+		line-height: $row * 1.5;
 	}
 
 	h3 {
@@ -61,6 +67,10 @@ html
 		// just like h4
 		font-size: 1.5rem;
 		line-height: $row;
+	}
+
+	p, ul, ol, pre, table, blockquote, figure {
+		margin-bottom: $row/2;
 	}
 
 	.image-frame.fixed

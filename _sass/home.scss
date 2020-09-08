@@ -3,13 +3,22 @@
 #beesness
 {
   background-image: url('../assets/home/stalk-exchange-pb.jpg');
+}
+
+#fadingmemories
+{
+  background-image: url('../assets/home/fading-memories-live.jpg');
+}
+
+#beesness, #fadingmemories
+{
   background-position: top center;
   height: $row*15;
 }
 
 @media (max-width: 599px)
 {
-  #beesness
+  #beesness, #fadingmemories
 	{
 		height: $row*12;
 	}
