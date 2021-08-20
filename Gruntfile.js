@@ -17,7 +17,8 @@ module.exports = function(grunt) {
 					'css/sassy.css': '_sass/sassy.scss',
 					'css/home.css': '_sass/home.scss',
 					'css/ideas.css': '_sass/ideas.scss',
-					'css/fadingmemories.css': '_sass/fadingmemories.scss'
+					'css/fadingmemories.css': '_sass/fadingmemories.scss',
+					'css/evviva.css': '_sass/evviva.scss'
 				}
 			}
 		},
@@ -26,7 +27,8 @@ module.exports = function(grunt) {
 				files: [
 					'index.html',
 					'./ideas/*',
-					'./fadingmemories/*'
+					'./fadingmemories/*',
+					'./evviva/*'
 				],
 				options: {
 					livereload: true

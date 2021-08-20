@@ -1,0 +1,293 @@
+<!doctype html>
+<!--
+TODO
+proof-read
+metas
+tweaks?
+
+DONE
+swap out h1 for h1
+swap out h2 for h1
+swap out h3 for h2
+change table to grid
+img padding-right on large screens
+font for both bold+italic
+logo
+colours
+hem icon
+illustrations
+-->
+<html class="no-js" lang="en-GB">
+  <head>
+
+    <script type="text/javascript">
+      var host = 'ma.tteo.me'
+      if ((host == window.location.host) && (window.location.protocol != 'https:')) window.location.protocol = 'https'
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Evviva?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="twitter:title" content=", " />
+
+    <!-- <link rel="stylesheet" href="../css/sassy.css"> -->
+    <link rel="stylesheet" href="../css/evviva.css">
+  </head>
+
+  <body class="">
+
+    <section class="container" id="overview">
+      <figure id="logo">
+        <img alt="" src="../assets/evviva/logo.jpg">
+      </figure>
+      <p><em>Evviva</em> is a <strong>cooperative puzzle game</strong> for 1-many players.</p>
+      <p>You play as a <strong>team of surgeons</strong>, working together to <strong>revive a strange patient</strong>. You will use square tiles to <strong>stitch up their organs, tissues and blood vessels</strong>.</p>
+      <p>As you operate on your strange patient, they will suffer several <strong>haemorrhages</strong>, and they might even die of a <strong>heart attack</strong>. But if you manage to stitch up all the body tiles while keeping your patient alive, you all win!</p>
+    </section>
+
+    <section class="container" id="setup">
+      <h1>Setup</h1>
+      <p>Your operation always begins with the <strong>🫀 <em>heart tile</em></strong>.</p>
+      <div class="grid two-columns">
+        <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/setup-heart.png">
+          </figure>
+        </div>
+        <div class="cell">
+          <p>Place the heart tile face up in the middle of the table and put 3 <strong><em>blood drop</em></strong> tokens on it.</p>
+          <p>Blood drops mark <strong><em>open wounds</em></strong>, and your patient's heart tile starts with 3 of them:</p>
+          <ol>
+            <li>On the top side of the tile, there's an <strong><em>organ</em></strong> that is open because it is not (yet) fully encompassed by a red <strong><em>membrane</em></strong>.</li>
+            <li>On the left side, there's a <strong><em>blood vessel</em></strong> that is open because on the left end it does not (yet) connect to an organ.</li>
+            <li>Similarly, on the right side there's an open blood vessel that doesn't (yet) end in an organ.</li>
+          </ol>
+        </div>
+        <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/setup-tracker.png">
+          </figure>
+        </div>
+        <div class="cell">
+          <p>Place the <strong><em>heart points tracker</em></strong> tiles face up next to each other on the table, and put the <strong><em>heart token</em></strong> on 5. This is your patient's initial health state. Put the remaining blood drop tokens next to the heart points tracker.</p>
+        </div>
+        <!-- <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/sketch-setup-draw-deck.jpg">
+          </figure>
+        </div>
+        <div class="cell">
+          <p>Shuffle the rest of the tiles and stack them face-down to make the <strong><em>draw deck</em></strong>.</p>
+        </div> -->
+      </div>
+
+      <p>Shuffle the rest of the tiles and stack them face-down to make the <strong><em>draw deck</em></strong>.</p>
+    </section>
+
+    <section class="container" id="play">
+      <h1>Play</h1>
+      <p>The player who was in a real operating theatre most recently takes the first turn. Play then proceeds clockwise.</p>
+
+      <div class="callout">
+        <p>On most turns you will do two things:</p>
+        <p><strong>☝️ Draw 1 tile</strong>
+          <br><strong>✌️ Place 1 tile</strong></p>
+      </div>
+
+      <p>Here is the full turn pedantic breakdown:</p>
+
+      <h2>1. Top up your hand</h2>
+      <p>Your <em>hand</em> is a set of face-up tiles from which you choose what to play.</p>
+      <p>If your hand has less than 2 tiles, draw as many tiles from the deck as you need to have 2 face-up tiles.</p>
+      <p>If you're playing with other people, you will share the same hand.</p>
+
+      <h2>2. Place 1 tile</h2>
+      <div class="grid two-columns">
+        <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/placing.png">
+          </figure>
+        </div>
+        <div class="cell">
+          <p>Attach 1 tile from your hand to the body, making sure that:</p>
+          <ul>
+            <li>You attach at least one side of the new tile to the full side of a tile already in play.</li>
+            <li>The features of each side you attach match the features of the side it joins.</li>
+          </ul>
+          <p>⚠️ In the rare case that none of the tiles in your hand can be legally placed, discard one of them, lose 1 heart point and draw another tile. Repeat this until you can legally place at least one tile from your hand.</p>
+        </div>
+      </div>
+
+      <h3>2.a Mark any new open wounds</h3>
+      <div class="grid two-columns">
+        <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/opening.png">
+          </figure>
+        </div>
+        <div class="cell">
+          <p>Inspect each <em>open</em> side of the tile you just placed to check if you have opened one or more wounds:</p>
+          <ul>
+            <li>If the open side has a blood vessel put a blood token on it.</li>
+            <li>If the open side has an organ that is not already marked as open, put a blood token on it.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>2.b Score heart points for any closed wounds</h3>
+      <div class="grid two-columns">
+        <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/closing.png">
+          </figure>
+        </div>
+        <div class="cell">
+          <p>Inspect each <em>closed</em> side of the tile you just placed to check if you have closed one or more wounds.</p>
+          <p>If the closed side connects to a <strong>blood vessel</strong>, remove the blood token on the other side.</p>
+          <ul>
+            <li>If the blood vessel has no open ends at this point, score 1 heart point for completing it (regardless of its length).</li>
+          </ul>
+          <p>If the closed side has an <strong>organ</strong>, check if all the organ parts are fully encompassed by a red membrane and there are no gaps within the organ. In that case, you completed the organ:</p>
+          <ul>
+            <li>Remove the blood token from the organ.</li>
+            <li>Score 1 heart point for each part of the organ you just completed (for example, a completed organ made of 4 parts will score 4 heart points).</li>
+          </ul>
+          <p>⚠️ Your score can never exceed 18 heart points.</p>
+        </div>
+      </div>
+
+      <h3>2.c Activate any special organ ability</h3>
+      <p>If the tile you just placed has a special organ:</p>
+      <ul>
+        <li>Score 1 heart point (it's a self-completing organ).</li>
+        <li>Do its special action as prescribed below.</li>
+      </ul>
+      <div class="grid two-columns">
+        <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/special-organ-brain.jpg">
+          </figure>
+        </div>
+        <div class="cell">
+          <p><strong>Brain</strong><br><em>Play smart</em></p>
+          <p>Draw the top 5 cards from the draw pile, then put them back in your preferred order (face-up if you like).</p>
+        </div>
+
+        <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/special-organ-eye.jpg">
+          </figure>
+        </div>
+        <div class="cell">
+          <p><strong>Eye</strong><br><em>See further</em></p>
+          <p>Draw 3 extra tiles.</p>
+        </div>
+
+        <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/special-organ-lung.jpg">
+          </figure>
+        </div>
+        <div class="cell">
+          <p><strong>Lung</strong><br><em>Get oxygen</em></p>
+          <p>If you completed a blood vessel with the lung, score 1 heart point for each blood vessel part you closed (as opposed to 1 heart point for the whole vessel).</p>
+        </div>
+
+        <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/special-organ-liver.jpg">
+          </figure>
+        </div>
+        <div class="cell">
+          <p><strong>Liver</strong><br><em>Cleanse it</em></p>
+          <p>Place one card from your hand at the bottom of the draw pile.</p>
+        </div>
+      </div>
+      <!-- <div>
+        <table>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+
+      <h3>2.d Trigger a haemorrhage!</h3>
+      <div class="grid three-columns">
+        <div class="cell">
+          <figure>
+            <img alt="" src="../assets/evviva/haemorrhage.png">
+          </figure>
+        </div>
+        <div class="cell">
+          <p>If the tile you just placed has a haemorrhage icon on it, you must trigger a haemorrhage:</p>
+          <ul>
+            <li>Count how many blood drop tokens (open wounds) are currently on the body.</li>
+            <li>Lose that number of heart points.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Turn over</h2>
+      <p>Continue taking turns until you have either won or lost the game!</p>
+    </section>
+
+    <section class="container" id="game-over">
+      <h1>Game over</h1>
+
+      <h2>Lose</h2>
+      <p>You <strong>lose</strong> the game immediately if <em>any</em> of these three conditions are met at any point in the game:</p>
+      <ol>
+        <li><strong><em>Bled to death</em></strong> = your heart points drop to zero or below.</li>
+        <li><strong><em>Clumsy surgeon(s)</em></strong> = you must add a drop token to the body but you have none left in the supply.</li>
+        <li><strong><em>Heart attack</em></strong> = your hand is full of haemorrhage tiles.</li>
+      </ol>
+
+      <h2>Win</h2>
+      <p>If you manage to play all the tiles, then you <em>could</em> <strong>win</strong>. After you placed the very last tile from your hand (and opened/closed any wounds with it) trigger one last haemorrhage: count how many open wounds are left in the body, and lose that many heart points. If your heart score is above zero, the patient is still alive and you all <strong>win</strong> the game!</p>
+
+      <h2>Your next game</h2>
+      <p>Try starting with a number of heart points lower than 5, and/or playing with a number of drop tokens lower than 12 to make your next game harder.</p>
+      <p>If instead you want an easier operation, start with more heart points and/or more drop tokens!</p>
+    </section>
+
+    <section class="boxed margin-bottom-none" id="credits">
+      <div class="container">
+        <h3 class="margin-top-none">Credits</h3>
+        <p>Designed in 2021 by <a href="../" target="_blank">Matteo Menapace</a> inspired by his brother's medical profession and the game <a href="https://boardgamegeek.com/boardgame/822/carcassonne" target="_blank"><em>Carcassonne</em></a></p>
+        <p>Illustrated by <a href="https://xinaneo.com" target="_blank">Anjora Noronha</a></p>
+        <p>Thanks to: Aimee Johanan, Aindri Chakraborty, Hwa Young Jung, Matt Leacock, Jake Fairnie, Dionne Fairnie, Pablo Suarez, Janot Mendler de Suarez, Amy Jackson-Bruce, Mariano Tomatis.</p>
+        <!--// TODO copyright notice -->
+      </div>
+    </section>
+
+  </body>
+
+  <!-- <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-148078137-1', 'auto');
+		ga('send', 'pageview');
+	</script> -->
+
+</html>

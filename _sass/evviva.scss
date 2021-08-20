@@ -1,0 +1,228 @@
+@import 'variables';
+@import 'normalize';
+@import 'typography';
+@import 'colours';
+@import 'elements';
+// @import 'surprise';
+// @import 'media';
+@import 'media-queries';
+@import 'bariol';
+@import 'grid';
+// @import 'callout';
+//@import 'form';
+
+
+// TYPOGRAPHY
+
+body, p a, span
+{
+	font-family: 'bariol-regular', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, serif;
+}
+
+body
+{
+	font-size: 1.375rem;
+	line-height: 1.375;
+	line-height: 1.5;
+}
+
+p, ul, ol, pre, table, blockquote, figure
+{
+	margin-bottom: $row/2;
+}
+
+ul, ol
+{
+	padding-left: 1.375rem;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'bariol-light-italic', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+	line-height: 1.225em;
+}
+
+em, i
+{
+	font-family: 'bariol-regular-italic', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+b, strong
+{
+	font-family: 'bariol-bold', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+	em, i
+	{
+		font-family: 'bariol-bold-italic', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	}
+}
+
+p a,
+kbd, code, span
+{
+	padding: .1rem .4rem;
+	// padding: 0.1rem .4rem .2rem;
+	// padding: 0rem .3rem .2rem;
+}
+
+.callout {
+  padding:$row/2 1rem;
+  margin-bottom: $row/2;
+
+	p:last-child {
+		margin-bottom:0;
+	}
+}
+
+
+// COLOURS
+
+body
+{
+	background: rgba($tissue-background,.38);
+	// background: $tissue-background;
+}
+
+body,
+p
+{
+	color: $vessel-outline;
+}
+
+h1, h2, h3
+{
+	color: $organ-outline;
+}
+
+
+a
+{
+  color: $tissue-background;
+	transition: .3s;
+}
+
+p a
+{
+  color: $tissue-background;
+  background-color: $organ-outline;
+	// background-color: $vessel-background;
+	// border-color: $organ-outline;
+	border: solid 1px $vessel-outline;
+  border-bottom-color: $vessel-outline;
+  box-shadow: inset 0 -1px 0 $vessel-outline;
+
+	&:hover,
+	&:focus
+	{
+		transition: .3s;
+		color: $tissue-background;
+    background-color: $vessel-outline;
+	}
+}
+
+.callout {
+  // color:#1c142d;
+  background-color: $tissue-background;
+  border:solid 1px $tissue-cells;
+  border-bottom-color: $tissue-cells;
+  box-shadow:inset 0 -1px 0 $tissue-cells;
+}
+
+#credits {
+	background-color: $tissue-background;
+}
+
+kbd, code, span
+{
+  border: solid 1px $pink-dark;
+	border-bottom-color: $pink-dark;
+	box-shadow: inset 0 -1px 0 $pink-dark;
+}
+
+blockquote
+{
+	border-color: $pink-dark;
+}
+
+/*.form
+{
+	input:focus,
+	input:active
+	{
+		box-shadow: inset 0 0 0px 1px $pink-dark;
+	}
+
+	input[type='submit']
+	{
+		color: $charcoal;
+		background: $pink-dark;
+
+		&:hover,
+		&:focus
+		{
+			background: $charcoal;
+			color: $pink-dark;
+		}
+	}
+}*/
+
+// MEDIA
+
+#logo img
+{
+	margin: $row auto;
+	display: block;
+	height: $row*8;
+	border-radius: $row*4;
+}
+
+
+
+// MEDIA QUERIES
+
+@media (max-width: 599px)
+{
+	h1
+	{
+		// padding: 0 $row/2;
+	}
+
+  h3
+  {
+		font-size: 30px;
+
+    // top: 0;
+		// font-family: 'bariol-bold-italic', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+@media (max-width: 399px)
+{
+	html
+	{
+		font-size: 12px; // p → 16.5px
+	}
+
+	h1
+	{
+		font-size: 47px;
+	}
+
+	h2
+	{
+		font-size: 35px;
+	}
+
+	h3
+	{
+		font-size: 23px;
+	}
+
+	.hidden-xs
+	{
+		display: none;
+	}
+}

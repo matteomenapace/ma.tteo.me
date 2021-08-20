@@ -1,4 +1,2 @@
-#beesness{background-image:url("../assets/home/stalk-exchange-pb.jpg");}#fadingmemories
-{background-image: url('../assets/home/fading-memories-live.jpg');}#beesness, #fadingmemories
-{background-position:top center;height:33.75rem}@media (max-width: 599px){#beesness, #fadingmemories{height:27rem}}
+#beesness{background-image:url("../assets/home/stalk-exchange-pb.jpg")}#fadingmemories{background-image:url("../assets/home/fading-memories-live.jpg")}#beesness,#fadingmemories{background-position:top center;height:33.75rem}@media (max-width: 599px){#beesness,#fadingmemories{height:27rem}}
 /*# sourceMappingURL=home.css.map */
