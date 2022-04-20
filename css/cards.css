@@ -12,7 +12,7 @@
   flex-direction:column;
   position:relative;
   color:#1c142d;
-  background-color:#ffde00;
+  background-color:#ffbf00;
   border:solid 1px #1c142d;
   border-bottom-color:#1c142d;
   box-shadow:inset 0 -1px 0 #1c142d;
@@ -41,8 +41,10 @@
   font-size:1.125rem;
   margin:0;
 }
-.cards .card:hover,.cards .card:focus{background-color:#1c142d}
-.cards .card:hover h2,.cards .card:hover h3,.cards .card:hover h4,.cards .card:hover p,.cards .card:focus h2,.cards .card:focus h3,.cards .card:focus h4,.cards .card:focus p{color:#ffde00}
+.cards .card:hover,.cards .card:focus {
+  background-color:#1c142d;
+}
+.cards .card:hover h2,.cards .card:hover h3,.cards .card:hover h4,.cards .card:hover p,.cards .card:focus h2,.cards .card:focus h3,.cards .card:focus h4,.cards .card:focus p{color:#ffbf00}
 .cards .card:first-child{left:-.75rem}
 .cards .card:last-child{left:.75rem}
 @media (max-width: 799px){
