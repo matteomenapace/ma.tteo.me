@@ -1,6 +1,6 @@
 {
   "name": "ma.tteo.me",
-  "version": "0.0.2019",
+  "version": "0.0.2022",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-browser-sync": "^2.2.0",
