@@ -1,12 +1,7 @@
 @import 'gridlover';
+@import 'variables';
 
-/* FONTS */
-
-$body-font: 'IBM Plex Sans', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, serif;
-
-$headings-font: 'Fredoka One', 'Roboto', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-$monospace-font: 'IBM Plex Mono', 'Source Code Pro', monospace;
+/* FONTs in _variables.scss */
 
 body
 {
@@ -64,19 +59,19 @@ i, em
 
 kbd, code, p a, span
 {
-  font-family: $monospace-font;
-  // font-size: 83%;
-  font-weight: 500;
+	font-family: $monospace-font;
+	// font-size: 83%;
+	font-weight: 500;
 	// line-height: 1;
 	// font-size: 1em;
-  // display: inline-block;
-  // border-radius: .3rem;
+	// display: inline-block;
+	// border-radius: .3rem;
 	// padding: .2rem .5rem .4rem;
 	// padding: 0rem .5rem .3rem;
-  // top: 0.1rem;
+	// top: 0.1rem;
 	padding: 0.15rem .5rem .2rem;
-  top: 0rem;
-  position: relative;
+	top: 0rem;
+	position: relative;
 }
 
 .small
@@ -89,3 +84,36 @@ kbd, code, p a, span
 		margin-bottom: 0;
 	}
 }
+
+// LINE-HEIGHT OVERRIDES
+
+body
+{
+	// line-height: 1.3;
+}
+
+h1
+{
+	line-height: 1;
+}
+
+h2
+{
+	line-height: 1.25;
+}
+
+h3, h4
+{
+	line-height: 1.5;
+}
+
+table
+{
+	line-height: 1.375;
+}
+
+.centred
+{
+	text-align: center;
+}
+

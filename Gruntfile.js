@@ -14,8 +14,9 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'css/sassy.css': '_sass/sassy.scss',
+					'css/base.css': '_sass/base.scss',
 					'css/home.css': '_sass/home.scss',
+					'css/beesness.css': '_sass/beesness.scss',
 					'css/ideas.css': '_sass/ideas.scss',
 					'css/fadingmemories.css': '_sass/fadingmemories.scss',
 					'css/evviva.css': '_sass/evviva.scss'
@@ -28,7 +29,9 @@ module.exports = function(grunt) {
 					'index.html',
 					'./ideas/*',
 					'./fadingmemories/*',
-					'./evviva/*'
+					'./evviva/*',
+					'./beesness/classes/*',
+					'./beesness/brainswarm/*'
 				],
 				options: {
 					livereload: true

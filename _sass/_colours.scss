@@ -21,12 +21,17 @@ h1, h2, h3, h4, h5,
 	color:$charcoal;
 }
 
+#me h1
+{
+	color: $orange;
+}
+
 a
 {
 	transition: color .3s;
 	// color: $turquoise;
 	color: $orange;
-  text-decoration: none;
+  	text-decoration: none;
 
 	&:hover,
 	&:focus
@@ -39,8 +44,8 @@ a
 p a
 {
 	color: $charcoal;
-  background-color: $orange;
-  border: solid 1px $charcoal;
+  	background-color: $orange;
+  	border: solid 1px $charcoal;
 	border-bottom-color: $charcoal;
 	box-shadow: inset 0 -1px 0 $charcoal;
 
@@ -95,3 +100,42 @@ kbd, code, span
 	background-color: $pink;
 	// background-color: rgba(253, 223, 223, 0.23);
 }
+
+.yellow
+{
+	background-color: $yellow;
+	// background-color: rgba(253, 223, 0, 0.23);
+}
+
+.yellow, .orange
+{
+	tr
+	{
+		// border-bottom: 1px solid $white;
+	}
+
+	kbd, code, span
+	{
+		border: solid 1px $white;
+		border-bottom-color: $white;
+		box-shadow: inset 0 -1px 0 $white;
+	}
+}
+
+tr
+{
+	border-bottom: 1px solid $orange;
+	border-bottom: 1px solid transparentize($clouds, 0.7);
+}
+
+.charcoal
+{
+	background: $charcoal;
+
+	h1, h2, h3, h4, p
+	{
+		// color: $yellow;
+		color: $orange;
+	}
+}
+

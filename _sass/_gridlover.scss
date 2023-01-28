@@ -10,6 +10,7 @@ body {
 	// font-size: 1.36rem;
 	font-size: 1rem;
 	line-height: $row;
+	line-height: 1.6;
 	margin: 0 auto;
 }
 
@@ -33,15 +34,19 @@ h4 {
 	line-height: $row;
 }
 
-h1, h2, h3, h4
-{
+h5 {
+	font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
 	margin-top: $row;
 	margin-bottom: 0rem;
 	margin-bottom: $row;
 }
 
-p {
-	font-size: 1.375rem;
+p, ul, ol {
+	// font-size: 1.375rem;
+	font-size: $row/2;
 }
 
 /*h5 {
@@ -58,8 +63,8 @@ p, ul, ol, pre, table, blockquote, figure {
 
 blockquote {
 	padding-left: $row/2;
-  margin: 0;
-  border-left: 6px solid;
+  	margin: 0;
+  	border-left: 6px solid;
 }
 
 figure {
@@ -71,7 +76,7 @@ ul ul, ol ol, ul ol, ol ul {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 1.5rem;
-  list-style-type: disc;
+  	list-style-type: disc;
 }
 
 b, strong, em, small, code {

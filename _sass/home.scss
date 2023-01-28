@@ -1,36 +1,11 @@
 @import 'variables';
-@import 'normalize';
-@import 'typography';
-@import 'colours';
-@import 'elements';
-@import 'surprise';
-@import 'media';
-@import 'media-queries';
+@import 'video-wrapper';
+@import 'cards';
 
 body {
   background: $pink-orange;
 }
 
-/*#beesness
-{
-  background-image: url('../assets/home/stalk-exchange-pb.jpg');
+p {
+  font-size: 1.375rem;
 }
-
-#fadingmemories
-{
-  background-image: url('../assets/home/fading-memories-live.jpg');
-}
-
-#beesness, #fadingmemories
-{
-  background-position: top center;
-  height: $row*15;
-}
-
-@media (max-width: 599px)
-{
-  #beesness, #fadingmemories
-	{
-		height: $row*12;
-	}
-}*/

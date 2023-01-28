@@ -31,15 +31,45 @@ img {
 	max-width: 100%; /* Adhere to container width. */
 }
 
+// table {
+// 	width: 100%;
+
+// 	td
+// 	{
+// 		padding-right: 1rem;
+
+// 		&:last-child
+// 		{
+// 			padding-right: 0;
+// 		}
+// 	}
+// }
+
 table {
 	width: 100%;
 
-	td
-	{
-		padding-right: 1rem;
+	tr {
+		&:first-child {
+			td {
+				padding-top: 0;
+			}
+		}
 
-		&:last-child
-		{
+		&:last-child {
+			border-bottom: none;
+			td {
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	td {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-right: 1rem;
+		vertical-align:top;
+
+		&:last-child {
 			padding-right: 0;
 		}
 	}
@@ -59,4 +89,9 @@ table {
 {
   margin: $row 0;
   padding: $row 0;
+}
+
+.uppercase 
+{
+	text-transform: uppercase;
 }
