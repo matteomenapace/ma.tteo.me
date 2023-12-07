@@ -9,3 +9,19 @@ body {
 p {
   font-size: 1.375rem;
 }
+
+#logo {
+  max-width: 160px;
+  position: relative;
+  left: -80px;
+  top: 30px;
+}
+
+@media (max-width: 899px)
+{
+    #logo {
+        left: 0;
+        margin: 0 auto;
+        top: 20px;
+    }
+}
