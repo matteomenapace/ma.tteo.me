@@ -75,9 +75,19 @@ table {
 	}
 }
 
+.margin-top
+{
+	margin-top: $row !important;
+}
+
 .margin-top-none
 {
 	margin-top: 0 !important;
+}
+
+.margin-bottom
+{
+	margin-bottom: $row !important;
 }
 
 .margin-bottom-none
