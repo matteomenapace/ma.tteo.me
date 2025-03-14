@@ -1,0 +1,18 @@
+@import 'variables';
+
+.logos {
+    display: grid;
+    margin-bottom: $row;
+  
+    &.three {
+      grid-template-columns: repeat(3,1fr);
+    }
+
+    .logo {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+}   

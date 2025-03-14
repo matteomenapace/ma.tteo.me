@@ -6,7 +6,7 @@
 body
 {
 	font-family: $body-font;
-	font-weight: 300;
+	font-weight: $body-font-weight;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -16,21 +16,24 @@ h1, h2, h3, h4, h5, h6,
 	// font-family: "IBM Plex Mono";
 	// font-family: "Fredoka One";
 	// font-weight: 900;
-	font-weight: 400;
+	// font-weight: 400;
+	font-weight: $h-font-weight;
 	font-style: inherit;
+	font-style: italic;
 
 	a, b
 	{
-		font-weight: 400;
+		// font-weight: 400;
+		font-weight: $h-font-weight;
 	}
 }
 
 a, b
 {
-	font-weight: 700;
+	font-weight: $a-font-weight;
 
 	p {
-		font-weight: 300;
+		font-weight: $body-font-weight;
 	}
 }
 
@@ -59,9 +62,9 @@ i, em
 
 kbd, code, p a, span
 {
-	font-family: $monospace-font;
+	//font-family: $monospace-font;
 	// font-size: 83%;
-	font-weight: 500;
+	//font-weight: 500;
 	// line-height: 1;
 	// font-size: 1em;
 	// display: inline-block;
@@ -69,7 +72,7 @@ kbd, code, p a, span
 	// padding: .2rem .5rem .4rem;
 	// padding: 0rem .5rem .3rem;
 	// top: 0.1rem;
-	padding: 0.15rem .5rem .2rem;
+	padding: 0.15rem .5rem;
 	top: 0rem;
 	position: relative;
 }

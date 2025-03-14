@@ -3,16 +3,21 @@
 $row: 2.25rem;
 
 
-
-
 // FONTS
 
-$body-font: 'IBM Plex Sans', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, serif;
-$headings-font: 'Fredoka One', 'Roboto', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font: 'IBM Plex Sans';
+$font: 'Inter';
+//$font: 'Libre Franklin';
+//$font: 'Work Sans';
+
+$body-font: $font, -apple-system-font, 'Helvetica Neue', Helvetica, Arial, serif;
+$headings-font: $font, -apple-system-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $monospace-font: 'IBM Plex Mono', 'Source Code Pro', monospace;
 $rounded-font: 'Nunito', -apple-system-font, 'Helvetica Neue', Helvetica, Arial, serif;
 
-
+$body-font-weight: 300;
+$h-font-weight: 900;
+$a-font-weight: 600;
 
 
 // COLOURS

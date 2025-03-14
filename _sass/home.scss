@@ -1,6 +1,7 @@
 @import 'variables';
-@import 'video-wrapper';
-@import 'cards';
+// @import 'video-wrapper';
+// @import 'cards';
+// @import 'logos';
 
 body {
   background: $pink-orange;
@@ -9,6 +10,8 @@ body {
 p {
   font-size: 1.375rem;
 }
+
+/*
 
 #logo {
   max-width: 160px;
@@ -25,3 +28,5 @@ p {
         top: 20px;
     }
 }
+
+*/

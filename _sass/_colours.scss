@@ -18,17 +18,17 @@ h1, h2, h3, h4, h5,
 .handwriting,
 .number
 {
-	color:$charcoal;
+	// color:$charcoal;
 }
 
 #me h1
 {
-	color: $orange;
+	// color: $orange;
 }
 
 a
 {
-	transition: color .3s;
+	// transition: color .3s;
 	// color: $turquoise;
 	color: $orange;
   	text-decoration: none;
@@ -36,7 +36,7 @@ a
 	&:hover,
 	&:focus
 	{
-		transition: color .3s;
+		// transition: color .3s;
 		color:$charcoal;
 	}
 }
@@ -47,14 +47,27 @@ p a
   	background-color: $orange;
   	border: solid 1px $charcoal;
 	border-bottom-color: $charcoal;
-	box-shadow: inset 0 -1px 0 $charcoal;
+	box-shadow: 0 1px 0 $charcoal;
 
 	&:hover,
 	&:focus
 	{
-		transition: color background-color .3s;
+		// transition: color .3s;
 		color: $orange;
 		background-color: $charcoal;
+	}
+
+	&.subtle
+	{
+		background-color: inherit;
+		border: none;
+		padding: 0;
+		&:hover,
+		&:focus
+		{
+			color: inherit;
+			box-shadow: 0 3px 0;
+		}
 	}
 }
 
